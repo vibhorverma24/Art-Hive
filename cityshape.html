@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cityscapes</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="cat_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="nav_bar">
+        <img src="/Screenshot 2024-02-08 181123.png" id="img1">
+        <h1 style="text-align: center;font-size: 3em;">
+            Cityscapes
+        </h1>
+        <button>
+            Cart
+        </button>
+    </div>
+    <div class="cart_box" id="cartBox">
+        <h1>Shopping Cart</h1>
+        <hr>
+        <div class="items">
+
+        </div>
+    </div>
+    <div class="pin_container">
+        <div class="card card_small">
+            <img src="https://wallup.net/wp-content/uploads/2019/09/453497-san-francisco-california-night-city-panorama-buildings-2.jpg" alt="Painting 1">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://th.bing.com/th/id/OIP.jdgDsRzRrUoXB4qz4Sq56wHaEK?w=1742&h=980&rs=1&pid=ImgDetMain" alt="Painting 2">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://th.bing.com/th?id=OIP.kKTo1zIP-wysmtF8l0sV3QHaF7&w=279&h=223&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Painting 3">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://th.bing.com/th/id/R.ac132ccd7c90afee4b56b71f074919f9?rik=by8jkWPjMnz9PA&riu=http%3a%2f%2fiso.500px.com%2fwp-content%2fuploads%2f2014%2f07%2fhong-kong-cityscape1.jpg&ehk=XI6wXvgCmexxiHepruo9pR%2bDKpymhdYXjqeI%2bniR9FI%3d&risl=&pid=ImgRaw&r=0" alt="Painting 4">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://th.bing.com/th/id/R.96f9c5a7e8f54dc07f2ae39554a278f0?rik=ZAYoJ4lJjIJQQw&riu=http%3a%2f%2fblog.creativelive.com%2fwp-content%2fuploads%2f2016%2f08%2fDSC4452-1.jpg&ehk=J%2b2SJ1sZ189xAhbMXORuSt%2fc7CsEod9WSvUrGS1%2bYNU%3d&risl=&pid=ImgRaw&r=0" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://live.staticflickr.com/65535/48666301751_6c6aef897b_b.jpg" alt="Painting 6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+
+
+        <div class="card card_large">
+            <img src="https://th.bing.com/th/id/OIP.HQ8_mFLGwNV8MAbJVKar1AHaE8?rs=1&pid=ImgDetMain" alt="Painting 6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://th.bing.com/th/id/OIP.jRe5IzlmSHpJarCqw2abSQHaEo?rs=1&pid=ImgDetMain" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://thumbs.dreamstime.com/b/frankfurt-night-20399094.jpg" alt="Painting 6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/31/149627-HDR-building-cityscape.jpg" alt="Painting 4">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://th.bing.com/th/id/OIP.HsPR8c1A3nZqy5CVJz6KRgHaEo?rs=1&pid=ImgDetMain" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+
+        <div class="card card_medium">
+            <img src="https://th.bing.com/th/id/OIP.9gPy7Z-VM_L_mcUfc9nJNAHaEK?rs=1&pid=ImgDetMain" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://hdqwalls.com/wallpapers/melbourne-cityscape-5k-xt.jpg" alt="Painting 6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/25/122991-cityscape.jpg" alt="Painting 4">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://www.pixel4k.com/wp-content/uploads/2018/09/san-francisco-california-cityscape-4k_1538070292.jpg" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+    </div>
+    <script src="cat_js.js"></script>
+</body>
+</html>

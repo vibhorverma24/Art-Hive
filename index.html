@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ART HIVE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+<body>
+    <div class="nav_bar">
+        <div class="logo">
+            <a href="#"><img src="/project_art_gallery/Screenshot 2024-02-08 181123.png"></a>
+        </div>
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/vertical-line.png" alt="vertical-line"/>
+        <div class="search_bar">
+            <img width="30" height="30" src="https://img.icons8.com/sf-regular/48/737373/search.png" alt="search"/>
+            <input type="search" placeholder="Search for artists" style="text-align: center" id="artistSearch" oninput="searchArtists()">
+        </div>
+        <div class="typing_text">
+          <h1>ART IS <span class="auto_type"></span></h1>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed=new Typed(".auto_type", {
+            strings: ["Love","Peace","Infinity"],
+            typeSpeed: 150,
+            backspeed:150,
+            loop: true,
+          })
+        </script>
+        <div class="links">
+            <div class="gift" onclick="abc()">Gift Vouchers</div>
+            <div class="cart">My Cart</div>
+            <div class="account" onclick="openlogin()">
+                LOGIN/SIGNUP
+            </div>
+            <div class="slider">
+                <img width="40px" src="/icons8-horizontal-line-100.png">
+                <img class="middle" width="40px" src="/icons8-horizontal-line-100.png">
+                <img width="40px" src="/icons8-horizontal-line-100.png">
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img style="height: 34vw;" src="https://rhythmartgallery.com/wp-content/uploads/2023/08/Govind-Dumbre-30-x-60-inches-Acrylic-on-canvas-.jpeg" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img style="height: 34vw;" src="https://rhythmartgallery.com/wp-content/uploads/2023/08/Dnyaneshwar-Mane-Rhythm-Art-Gallery-Mumbai-Artist.jpg" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img style="height: 34vw;" src="https://rhythmartgallery.com/wp-content/uploads/2023/05/Manish-Chavda-Landscape-Nature-Rhythm-Art-Gallery-Mumbai-Artist.jpg" class="d-block w-100" alt="...">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="category_head" style="text-align:center; margin-left:4vw;">
+      Shop by Collections
+    </h1>
+    <div class="collectioner container">
+      <div class="row row-cols-lg-4 row-cols-md-2">
+          <a href="abtract.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Abstract.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2 style="margin-left:20%;">ABSTRACT</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+          <a href="banaras.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Banaras.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2 style="margin-left :20%;">BANARAS</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+          <a href="buddha.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Buddha.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2 style="margin-left:25%;">BUDDHA</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+          <a href="indian.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Indian-Traditional.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2>INDIAN TRADITIONAL</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+          <a href="blackandwhite.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/BW.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2>BLACK AND WHITE</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+          <a href="landscapes.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Landscape.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2 style="margin-left:1.6vw;">LANDSCAPES</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+          <a href="cityshape.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Cityscape.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2 style="margin-left:16%;">CITYSCAPE</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+          <a href="radha.html" target="_blank">
+          <div class="box col-lg categ">
+            <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Radha-Krishna.jpg" alt="" class="collections">
+            <div class="blackout">
+              <h2 style="margin-left: 4%";>RADHA KRISHNA</h2>
+              <button>Explore</button>
+            </div>
+          </div>
+          </a>
+      </div>
+  </div>
+  <div class="artists">
+    <h1>
+      Explore Artists
+    </h1>
+    <div class="artist_album">
+      <div class="artist artist_aj">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2017/09/A-J-Moujan-Rhythm-Art-Artist.jpg" alt="">
+        <div class="follow">
+          <p>
+            AJ Moujan
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="artist artist_amit">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2024/02/Amit-Srivastava-RHYTHM-ART-MUMBAI.jpeg" alt="">
+        <div class="follow">
+          <p>
+            Amit Srivastava
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="artist artist_anand">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2017/09/Anand-Panchal-Rhythm-Art-Artist.jpg" alt="">
+        <div class="follow">
+          <p>
+            Anand Panchal
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="artist artist_anil">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2021/07/Anil-Kumar-Yadav-Rhythm-Art-Artist.jpg" alt="">
+        <div class="follow">
+          <p>
+            Anil Yadav
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="artist artist_arpan">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2021/07/Anita-Kumar-Rhythm-Art-Artist.jpg" alt="">
+        <div class="follow">
+          <p>
+            Arpan Bhowmik
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="artist artist_arvind">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2017/08/Arvind-Mahajan-Artist-Rhythm-Art-Mumbai.jpg" alt="">
+        <div class="follow">
+          <p>
+            Arvind Mahajan
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="artist artist_city">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2020/09/Rhythm-Art-Artist-Mumbai.jpg" alt="">
+        <div class="follow">
+          <p>
+            Cityscape Art
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+      <div class="artist artist_deb">
+        <img src="https://rhythmartgallery.com/wp-content/uploads/2017/09/Deb-Rhythm-Art-Artist-Mumbai-1.jpg" alt="">
+        <div class="follow">
+          <p>
+            Debashish Roy
+          </p>
+          <button id="follow" onclick="changeButton(this)">
+            Follow
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2022/03/A-J-Moujan-12-x-12-inches-Acrylic-on-canvas-2-600x601-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By AJ MOUJAN</h6>
+          <p class="arts_price">
+            Rs. 6000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Indian Musician<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2021/01/A-J-Moujan-12-x-12-inches-Acrylic-on-canvas-2-600x601-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By AJ MOUJAN</h6>
+          <p class="arts_price">
+            Rs. 7000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Indian Musician<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2022/10/A-J-Moujan-12-x-12-inches-Acrylic-on-canvas-5-600x590-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By AJ MOUJAN</h6>
+          <p class="arts_price">
+            Rs. 10000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Indian Musician<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2021/01/A-J-Moujan-12-x-12-inches-Acrylic-on-canvas-1-600x595-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By AJ MOUJAN</h6>
+          <p class="arts_price">
+            Rs. 8500
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Indian Musician<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2018/09/A-J-Moujan-30-x-30-inches-Acrylic-on-canvas-600x588-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By AJ MOUJAN</h6>
+          <p class="arts_price">
+            Rs. 9000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Indian Musician<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img style="height: 13em; width:25em;" src="https://rhythmartgallery.com/wp-content/uploads/2024/02/Amit-Srivastava-24.5-x-36-inches-Oil-on-Canvas-Rs.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Amit Srivastava</h6>
+          <p class="arts_price">
+            Rs. 68000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Sunrise by Ganges<br>Acrylic on Canvas<br>24 X 36 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img style="height: 17em;"src="https://rhythmartgallery.com/wp-content/uploads/2017/09/Anand-Panchal-36-x-34-Acrylic-on-Canvas-570x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Anand Panchal</h6>
+          <p class="arts_price">
+            Rs. 195000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Innocence<br>Acrylic on Canvas<br>36 X 34 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img style="width:25em; height:12em;" src="https://rhythmartgallery.com/wp-content/uploads/2023/05/Anand-Panchal-30-x-72-inches.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Anand Panchal</h6>
+          <p class="arts_price">
+            Rs. 225000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Group<br>Acrylic on Canvas<br>30 X 72 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2017/09/Anand-Panchal-Round-Acrylic-on-canvas-18-x-18-inches-600x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Anand Panchal</h6>
+          <p class="arts_price">
+            Rs. 150000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Untitled<br>Acrylic on Canvas<br>18 X 18 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img style="height: 20em;" src="https://rhythmartgallery.com/wp-content/uploads/2021/07/Anil-Kumar-Yadav-Acrylic-on-canvas-12-x-16-inches-1-448x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Anil Yadav</h6>
+          <p class="arts_price">
+            Rs. 18000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Bells<br>Acrylic on Canvas<br>12 X 16 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img style="height: 20em;" src="https://rhythmartgallery.com/wp-content/uploads/2021/09/Anil-Kumar-Yadav-Acrylic-on-canvas-12-x-16-inches-2-448x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Anil Yadav</h6>
+          <p class="arts_price">
+            Rs. 18500
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Bells<br>Acrylic on Canvas<br>12 X 16 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img style="height: 20em;" src="https://rhythmartgallery.com/wp-content/uploads/2021/09/Anil-Kumar-Yadav-Acrylic-on-canvas-12-x-16-inches-4-452x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Anil Yadav</h6>
+          <p class="arts_price">
+            Rs. 18000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Bells<br>Acrylic on Canvas<br>12 X 16 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Arpan-Bhowmik-12-x-12-inches-Acrylic-on-canvas-1.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arpan Bhowmik</h6>
+          <p class="arts_price">
+            Rs. 30000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Kolkata Streets<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2021/09/Arpan-Bhowmik-12-x-12-inches-Acrylic-on-canvas-4-594x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arpan Bhowmik</h6>
+          <p class="arts_price">
+            Rs. 30000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Gateway of India<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2022/06/Arpan-Bhowmik-12-x-12-inches-Acrylic-on-canvas-9-600x601-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arpan Bhowmik</h6>
+          <p class="arts_price">
+            Rs. 30000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>VT Station<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Arpan-Bhowmik-12-x-12-inches-Acrylic-on-canvas-1-2.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arpan Bhowmik</h6>
+          <p class="arts_price">
+            Rs. 30000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Kolkata Tram<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2023/04/Arpan-Bhowmik-12-x-12-inches-Acrylic-on-canvas-3.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arpan Bhowmik</h6>
+          <p class="arts_price">
+            Rs. 30000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Kolkata Tram<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2023/12/Arvind-Mahajan-16-x-16-inches-Krishna.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arvind Mahajan</h6>
+          <p class="arts_price">
+            Rs. 17000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Krishna<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2023/12/Arvind-Mahajan-16-x-16-inches-Shiva.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arvind Mahajan</h6>
+          <p class="arts_price">
+            Rs. 15000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Shiva<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2023/12/Arvind-Mahajan-16-x-16-inches-Ganehsa.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arvind Mahajan</h6>
+          <p class="arts_price">
+            Rs. 8500
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Ganesha<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2023/12/Arvind-Mahajan-16-x-16-inches-Hanuman.jpeg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Arvind Mahajan</h6>
+          <p class="arts_price">
+            Rs. 15000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Hanuman<br>Acrylic on Paper<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2020/08/14-x-10-inches-5-443x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By CityScape Art</h6>
+          <p class="arts_price">
+            Rs. 5000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Cityscape<br>Watercolor on Paper<br>14 X 10 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2020/07/16-x-9.5-inches-362x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By CityScape Art</h6>
+          <p class="arts_price">
+            Rs. 4000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Untitled<br>Watercolor on Paper<br>16 X 9.5 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2020/07/20.5-x-14-inches-415x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Cityscape Art</h6>
+          <p class="arts_price">
+            Rs. 5000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Untitled<br>Watercolor on Paper<br>20.5 X 14 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2020/08/14-x-10-inches-6-445x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By AJ MOUJAN</h6>
+          <p class="arts_price">
+            Rs. 5000
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Cityscape<br>Watercolor on Paper<br>14 X 10 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2020/07/17-x-14-inches-467x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Cityscape Art</h6>
+          <p class="arts_price">
+            Rs. 4500
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Cityscape<br>Watercolor on Paper<br>17 X 14 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arts_aj">
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2020/08/Debashish-12-x-12-inches-Acrylic-on-canvas-1-1-600x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Debashish Roy</h6>
+          <p class="arts_price">
+            Rs. 6800
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Untitled<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2019/09/Deb-12-x-12-inches-Arylic-on-canvas3-1-600x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Debashish Roy</h6>
+          <p class="arts_price">
+            Rs. 5800
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Landscape<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2019/09/Deb-12-x-12-inches-Arylic-on-canvas4-595x600-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Debashish Roy</h6>
+          <p class="arts_price">
+            Rs. 4800
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Floral Abstract<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="arts_1">
+        <div class="arts_image">
+          <img src="https://rhythmartgallery.com/wp-content/uploads/2019/09/Deb-12-x-12-inches-Arylic-on-canvas-600x597-1.jpg" alt="">
+        </div>
+        <div class="arts_head">
+          <h6>By Debashish Roy</h6>
+          <p class="arts_price">
+            Rs. 4800
+          </p>
+        </div>
+        <div class="arts_info">
+          <p>Floral Abstract<br>Acrylic on Canvas<br>12 X 12 inches</p>
+          <button class="arts_add" onclick="addButton(this)">
+            ADD
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart_box_parent">
+    <div class="cart_box">
+      <div class="closer_cart" style="position: absolute; right:5px; top:5px;cursor: pointer;">
+        <img width="21" height="21" src="https://img.icons8.com/material-rounded/24/delete-sign.png" alt="delete-sign"/>
+      </div>
+      <h1>
+        Shopping Cart
+      </h1>
+      <div class="items">
+  
+      </div>
+      <div class="total">Total: <span class="total_amount">₹0.00</span></div>
+    </div>
+  </div>
+
+  <div class="container-fluid" style="overflow-x: hidden;">
+    <div class="row">
+            <div class="box-col-md-4 col-sm-4" style ="
+            color:white;
+            font-family: poppins;
+            padding-left:2.5em;
+            background-color:#4f4f4f;
+            border-right: 2px solid white;">
+                <div  style="display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top:1.5em;
+                ">
+                    
+                    <span style="margin-right: 1.5rem;">
+                        <img src="https://img.icons8.com/ios/50/FFFFFF/card-in-use.png" alt="card-in-use"/>
+                    </span>
+                    <span>
+                        <h4>Easy Payment Options</h4>
+                        <p>For Fast Transactions</p>
+                    </span>
+                </div>
+            </div>
+            <div class="box-col-md-4 col-sm-4" style="
+            color: white;
+            font-family: poppins;
+            padding-left:2.5em;
+            background-color:#4f4f4f;
+            border-right: 2px solid white;">
+                <div style="display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1.5em;">
+                    <span style="margin-right: 1rem;
+                    padding-bottom: 1.5em;">
+                        <img src="https://img.icons8.com/pastel-glyph/64/FFFFFF/box--v2.png" alt="box--v2"/>
+                    </span>
+                    <span>
+                        <h4>Safe & Secure Packaging</h4>
+                        <p>For Your Paintings & Sculptures</p>
+                    </span>
+                </div>
+            </div>
+            <div class="box-col-md-4 col-sm-4" style="
+            color: white;
+            font-family: poppins;
+            padding-left:2.5em;
+            background-color:#4f4f4f;">
+                <div style="display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1.5em;">
+                    <span style="margin-right: 1rem;
+                    padding-bottom: 1em;">
+                        <img src="https://img.icons8.com/glyph-neue/64/FFFFFF/truck.png" alt="truck"/>
+                    </span>
+                    <span>
+                        <h4>Worldwide Shipping!</h4>
+                        <p>At Your Door Step.</p>
+                    </span>
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-4" style="
+                background-color: rgb(214, 214, 214);
+                padding-left:3em;
+                padding-top:1em;
+                color:#4f4f4f">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Shopping Help</h3>
+                        </div>
+                        <div class="col-md-6">
+                                <span>FAQ's</span>
+                                <br>
+                                <span>Terms & Conditions</span>
+                                <br>
+                                <span>Privacy Policy</span>
+                                <br>
+                                <span>Disclaimer</span>
+                                <br>
+                                <span>RA Assurance</span>
+                                <br>
+                                <span>Payment Options</span>
+                                <br>
+                                <span>Return & Cancellations</span>
+                                <br>
+                                <span>Contact Us</span>
+                        </div>
+                        <div class="col-md-6">        
+                                <span>Paintings</span>
+                                <br>
+                                <span>Sculptures</span>
+                                <br>
+                                <span>Gallery Services</span>
+                                <br>
+                                <span>Past Shows</span>
+                                <br>
+                                <span>Testimonials</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4" style="
+                background-color: rgb(214, 214, 214);
+                padding-left:3em;
+                padding-top:1em;
+                color:#4f4f4f">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Connect With Us</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="s_handles">
+                                <a href="#"><img width="35" height="35" src="https://img.icons8.com/ios/50/facebook-new.png" alt="facebook-new"/></a>
+                                <a href="#"><img width="35" height="35" src="https://img.icons8.com/ios/50/twitterx--v1.png" alt="twitterx--v1"/></a>
+                                <a href="#"><img width="35" height="35" src="https://img.icons8.com/sf-regular/48/instagram-new.png" alt="instagram-new"/></a>
+                                <a href=""><img width="35" height="35" src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1"/></a>
+                            </div>
+                            
+                            <div>
+                                <b>Email:</b>
+                                <br>
+                                <span>info@arthivegallery.com</span>
+                                <br>
+                                <span>hive@arthivegallery.com</span>
+                                <br>
+                                <br>
+                                <b>Tel:</b>
+                                <span>+91-7898776755</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4" style="
+                background-color: rgb(214, 214, 214);
+                padding-left:3em;
+                padding-top:1em;
+                color:#4f4f4f">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Visit Our Gallery</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <div>
+                                <span>THE ART HIVE</span>
+                                <br>
+                                <span>4,Rajpura</span>
+                                <br>
+                                <span>Chitkara University</span>
+                                <br>
+                                <span>National Highway Rajpura-</span>
+                                <br>
+                                <span>Chandigarh - 140401</span>
+                                <br>
+                                <br>
+                                <span>Monday to Saturday: 9:20 am - 4:30 pm</span>
+                                <br>
+                                <span>Sunday: By Appointment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div class="bg-popContainer">
+      <div class="pop-box">
+        <div class="box_head">
+          <span><p style="font-size: 25px;font-weight:500">Coupon Code : ARTHIVE30</p><button class="copy" onclick="change()">Copy Code</button></span>
+          <div class="closer" id="close">
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/cancel.png" alt="cancel"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parent_account">
+      <div class="account_container">
+        <button class="close_account">
+          <img width="25" height="25" src="https://img.icons8.com/ios/50/1A1A1A/cancel.png" alt="cancel"/>
+        </button>
+        <div class="logged_in">
+          <h5>
+          </h5>
+          <p>
+            Want to sign out?
+          </p>
+          <button id="account_logout">
+            LOG OUT
+          </button>
+        </div>
+        <div class="sign_in">
+            <h2>LOGIN</h2>
+            <form>
+              <div class="input_box">
+                <div class="input_image">
+                  <img src="https://img.icons8.com/material-outlined/24/new-post.png" alt="new-post"/>
+                </div>
+                <input class='welcome' type="email" placeholder="Email">
+              </div>
+              <p class="to_hidden" style="color:red; margin-top:-25px;">*Field is Compulsary*</p>
+              <div class="input_box">
+                <div class="input_image">
+                  <img style="height: 21px; width:21px;" src="https://img.icons8.com/ios/50/password--v1.png" alt="password--v1"/>
+                </div>
+                <input class="pass" type="password" placeholder="Password"><br>
+              </div>
+              <p class="to_hidden" style="color:red; margin-top:-25px">*Field is Compulsary*</p>
+            </form>
+            <button id="log">SIGN IN</button>
+            <div class="other_op">
+              <p>Or continue signing using</p>
+              <i class="fa-brands fa-google fa-2x" style="margin-right: 10px;"></i>
+              <i class="fa-brands fa-github fa-2x" style="margin-right: 10px;"></i>
+              <i class="fa-brands fa-facebook fa-2x" style="margin-right: 10px;"></i>
+              <i class="fa-brands fa-twitter fa-2x"></i>
+            </div>
+        </div>
+        <div class="sign_up">
+          <h2>SIGN UP</h2>
+          <form>
+            <div class="input_box">
+              <div class="input_image">
+                <img src="https://img.icons8.com/ios-glyphs/30/person-male.png" alt="person-male"/>
+              </div>
+              <input class="welcome_new" type="text" placeholder="First Name">
+            </div>
+            <p class="to_hidden" style="color:red; margin-top:-25px">*Field is Compulsary*</p>
+            <div class="input_box">
+              <div class="input_image">
+                <img src="https://img.icons8.com/ios-glyphs/30/person-male.png" alt="person-male"/>
+              </div>
+              <input class="welcome_last" type="text" placeholder="Last Name">
+            </div>
+            <p class="to_hidden" style="color:red; margin-top:-25px">*Field is Compulsary*</p>
+            <div class="input_box">
+              <div class="input_image">
+                <img src="https://img.icons8.com/material-outlined/24/new-post.png" alt="new-post"/>
+              </div>
+              <input class="welcome_email" type="email" placeholder="Email">
+            </div>
+            <p class="to_hidden" style="color:red; margin-top:-25px">*Field is Compulsary*</p>
+          </form>
+          <button id="sign">SIGN UP</button>
+           <div class="other_op">
+              <p>Or continue signing using</p>
+                <i class="fa-brands fa-google fa-2x" style="margin-right: 10px;"></i>
+                  <i class="fa-brands fa-github fa-2x" style="margin-right: 10px;"></i>
+                  <i class="fa-brands fa-facebook fa-2x" style="margin-right: 10px;"></i>
+                  <i class="fa-brands fa-twitter fa-2x"></i>
+            </div>
+        </div>
+        <div class="toggler_left">
+          <button id="toggler_log">
+            LOGIN
+          </button>
+      </div>
+    </div>
+  </div>
+  <div class="slider_box" style="position: absolute; top:11.5%; right:1%; background-color: white;padding:10px;font-size: 17px; font-family: Poppins ;display:flex;flex-direction: column;align-items: center;">
+    <div class="gift" onclick="abc()">Gift Vouchers</div>
+    <div class="cart">My Cart</div>
+    <div class="account" onclick="openlogin()">
+      LOGIN/SIGNUP
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: Poppins;
+    /* overflow-x: hidden; */
+}
+/* Add these styles to your existing CSS */
+
+.cart_box {
+    /* existing styles */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart_box h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.items {
+    max-height: 25em;
+    overflow-y: auto;
+}
+
+.cart_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart_item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.item_details {
+    flex-grow: 1;
+}
+
+.item_details h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.item_details p {
+    font-size: 1em;
+    color: #777;
+}
+
+.remove_item {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove_item:hover {
+    background-color: #ff3333;
+}
+
+:root {
+    --card_width: 250px;
+    --card_border_radius: 16px;
+    --row_increment: 10px;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+}
+
+body {
+    margin: 0;
+            padding: 0;
+        }
+
+        .nav_bar{
+            position:relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav_bar h1{
+            position: absolute;
+            left:45%;
+            font-weight: 400;
+        }
+
+        .nav_bar button{
+            position: absolute;
+            right:4%;
+            background-color: white;
+            border: 3px solid black;
+            padding:5px 20px 5px 20px;
+            font-size: 20px;
+            transition-property: all;
+            transition-duration: 0.5s;
+            font-weight: 500;
+        }
+        .cart_box{
+            position:fixed;
+            top:10%;
+            z-index:100;
+            /* left:30%; */
+            right:25%;
+            background-color: white;
+            height: 35em;
+            width:40em;
+            border-radius: 20px;
+            visibility: hidden;
+        }
+    
+        .cart_box div.closer{
+            position: absolute;
+            right:10px;
+            top:10px;
+            cursor: pointer;
+        }
+
+        .nav_bar button:hover{
+            transform: translateY(-5px);
+            border:3px solid rgb(240, 176, 68);
+            color:rgb(2, 184, 184);
+            background-color: rgb(255, 252, 247);
+            cursor: pointer;
+        }
+
+        .nav_bar img{
+            margin-left: 15px;
+            margin-top: 10px;
+            height:70px;
+            width:160px;
+        }
+        .parent_{
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            backdrop-filter: blur(7px);
+            background-color: #0000008e;
+            z-index:600;
+            top:0px;
+            visibility: hidden;
+        }
+        .pin_container {
+            margin: 0;
+            padding: 0;
+            width: 80vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            justify-content: center;
+            background-color: white;
+        }
+        .card {
+            padding: 0px;
+            margin: 15px 10px;
+            border-radius: var(--card_border_radius);
+            background-color: red;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--card_border_radius);
+            object-fit: cover;
+        }
+
+        .card_small {
+            grid-row-end: span var(--card_small);
+            position: relative;
+        }
+
+        .card_small:hover button{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        .card_small:hover div.cat_price{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        button.add_{
+            position: absolute;
+            bottom:8px;
+            right:8px;
+            background-color: rgba(255, 255, 255, 0);
+            color:rgba(240, 248, 255, 0);
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border:none;
+            font-size: 0.9em;
+            border-radius: 10px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        
+        .card_medium {
+            grid-row-end: span var(--card_medium);
+            position: relative;
+        }
+
+        .card_medium:hover button.add_{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        .card_medium:hover button.like_{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        .card_medium:hover div.cat_price{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        .card_medium button.add_{
+            position: absolute;
+            bottom:8px;
+            right:8px;
+            background-color: rgba(255, 255, 255, 0);
+            color:rgba(240, 248, 255, 0);
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border:none;
+            font-size: 0.9em;
+            border-radius: 10px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        .card_large {
+            grid-row-end: span var(--card_large);
+            position: relative;
+        }
+
+        .card_large:hover button.add_{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        .card_large:hover button.like_{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        .card_large:hover div.cat_price{
+            visibility: visible;
+            background-color: rgb(255, 255, 255);
+            color:black;
+        }
+
+        .card_large button.add_{
+            position: absolute;
+            bottom:8px;
+            right:8px;
+            background-color: rgba(255, 255, 255, 0);
+            color:rgba(240, 248, 255, 0);
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border:none;
+            font-size: 0.9em;
+            border-radius: 10px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        button.like_{
+            position: absolute;
+            border-radius: 60%;
+            padding-top: 2px;
+            top:8px;
+            right:8px;
+            background-color: white;
+            border:none;
+            height:2em;
+            width:2em;
+            background-color: rgba(255, 255, 255, 0);
+            color:rgba(240, 248, 255, 0);
+            transition-property: all;
+            transition-duration: 0.5s;
+            visibility: hidden;
+            cursor: pointer;
+        }
+        .cat_price{
+            position: absolute;
+            left:8px;
+            bottom:8px;
+            background-color: white;
+            border-radius: 10px;
+            padding-left:10px;
+            padding-right:10px;
+            padding-top:5px;
+            padding-bottom:5px;
+            font-size: 0.9em;
+            visibility: hidden;
+            background-color: rgba(255, 255, 255, 0);
+            color:rgba(0, 0, 0, 0);
+            transition-property: all;
+            transition-duration: 0.5s;
+        }

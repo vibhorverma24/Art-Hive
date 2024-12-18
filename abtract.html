@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="cat_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="nav_bar">
+        <img src="/Screenshot 2024-02-08 181123.png" id="img1">
+        <h1 style="text-align: center;font-size: 3em;">
+            Abstract
+        </h1>
+        <button>
+            Cart
+        </button>
+    </div>
+    <div class="parent_">
+        <div class="cart_box" id="cartBox">
+            <h1>Shopping Cart</h1>
+            <hr>
+            <div class="default">
+                <p style="text-align: center;display:none;">Nothing to display here..</p>
+            </div>
+            <div class="items">
+                
+            </div>
+            <div id="total_amount">Total: 0.00</div>
+            <div class="closer">
+                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/delete-sign.png" alt="delete-sign"/>
+            </div>
+        </div>
+    </div>
+    <div class="pin_container">
+        <div class="card card_small">
+            <img src="https://th.bing.com/th/id/OIP.pGK7Uy03NwRsbmM12WBbvgHaEJ?rs=1&pid=ImgDetMain" alt="Painting 1" id="img2">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/OIP.pGK7Uy03NwRsbmM12WBbvgHaEJ?rs=1&pid=ImgDetMain`, 'Abstract 1', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://images.hdqwalls.com/download/abstract-graphic-design-s8-3840x2160.jpg" alt="Painting 2" id="img3">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://images.hdqwalls.com/download/abstract-graphic-design-s8-3840x2160.jpg`, 'Abstract - 2', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://www.hdwallpapers.in/download/colorful_clouds_abstract_4k_hd_abstract-HD.jpg" alt="Painting 3" id="img4">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://www.hdwallpapers.in/download/colorful_clouds_abstract_4k_hd_abstract-HD.jpg`, 'Abstract 4', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://img.freepik.com/premium-photo/abstract-background_334978-3185.jpg" alt="Painting 4" id="img5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://img.freepik.com/premium-photo/abstract-background_334978-3185.jpg`, 'Abstract 5', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://th.bing.com/th/id/OIP.pjodMChwKADW-kKgskKhhAHaEO?w=1344&h=768&rs=1&pid=ImgDetMain" alt="Painting 5" id="img6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/OIP.pjodMChwKADW-kKgskKhhAHaEO?w=1344&h=768&rs=1&pid=ImgDetMain`, 'Abstract 6', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://th.bing.com/th/id/R.a91da603670a38d55d96c3a39d008f00?rik=9riNNEIR9jdr7g&riu=http%3a%2f%2f3.bp.blogspot.com%2f-SaHYrueITDs%2fTxEIIbFRtRI%2fAAAAAAAAG1A%2fxOtp2Z-1WI4%2fs1080%2famazing_abstract_hd_wallpaper-5.jpg&ehk=Q7bvcbtMxn5o6F0tcRGbNibAn8Dgur0ZPuGtWXlfSG0%3d&risl=&pid=ImgRaw&r=0" alt="Painting 6" id="img7">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/R.a91da603670a38d55d96c3a39d008f00?rik=9riNNEIR9jdr7g&riu=http%3a%2f%2f3.bp.blogspot.com%2f-SaHYrueITDs%2fTxEIIbFRtRI%2fAAAAAAAAG1A%2fxOtp2Z-1WI4%2fs1080%2famazing_abstract_hd_wallpaper-5.jpg&ehk=Q7bvcbtMxn5o6F0tcRGbNibAn8Dgur0ZPuGtWXlfSG0%3d&risl=&pid=ImgRaw&r=0`, 'Abstract 7', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+
+
+        <div class="card card_large">
+            <img src="https://th.bing.com/th/id/R.1744f97ab19a0142d493b3c49f021602?rik=3hLgdXyYqFs4%2fA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fImages-HD-Abstract-Wallpapers-1.jpg&ehk=6xVwRsHOIHsFMvc58FSWaoO6rs%2bd7szd4qxqkLzQRzU%3d&risl=&pid=ImgRaw&r=0" alt="Painting 6" id="img8">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/R.1744f97ab19a0142d493b3c49f021602?rik=3hLgdXyYqFs4%2fA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fImages-HD-Abstract-Wallpapers-1.jpg&ehk=6xVwRsHOIHsFMvc58FSWaoO6rs%2bd7szd4qxqkLzQRzU%3d&risl=&pid=ImgRaw&r=0`, 'Abstract 8', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/crouded-stage-vrl-art.jpg" alt="Painting 5" id="img9">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/crouded-stage-vrl-art.jpg`, 'Abstract 9', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://i.pinimg.com/736x/cf/70/08/cf70088bff70c00d8e39444f39714b16.jpg" alt="Painting 6" id="img10">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://i.pinimg.com/736x/cf/70/08/cf70088bff70c00d8e39444f39714b16.jpg`, 'Abstract 10', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://th.bing.com/th/id/OIP.ZsD9uQJ04J-n6Y_c2ngVtAHaEJ?w=626&h=351&rs=1&pid=ImgDetMain" alt="Painting 4" id="img11">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/OIP.ZsD9uQJ04J-n6Y_c2ngVtAHaEJ?w=626&h=351&rs=1&pid=ImgDetMain`, 'Abstract 11', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Colorful-Abstract-Backgrounds-Free-Download.jpg" alt="Painting 5" id="img12">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://www.pixelstalk.net/wp-content/uploads/2016/10/Colorful-Abstract-Backgrounds-Free-Download.jpg`, 'Abstract 12', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+
+        <div class="card card_medium">
+            <img src="https://th.bing.com/th/id/OIP.Zrdc-qoFopscf0r4wEFMWwHaMW?w=768&h=1280&rs=1&pid=ImgDetMain" alt="Painting 5" id="img13">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/OIP.Zrdc-qoFopscf0r4wEFMWwHaMW?w=768&h=1280&rs=1&pid=ImgDetMain`, 'Abstract 13', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/4k-Abstract-Wallpaper-Widescreen-HD.jpg" alt="Painting 6" id="img14">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://www.pixelstalk.net/wp-content/uploads/2016/06/4k-Abstract-Wallpaper-Widescreen-HD.jpg`, 'Abstract 14', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://treeoflifecentre.co.uk/wp-content/uploads/2020/07/Naturology-photo-1_opt.jpg" alt="Painting 4" id="img15">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://treeoflifecentre.co.uk/wp-content/uploads/2020/07/Naturology-photo-1_opt.jpg`, 'Abstract 15', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://images.hdqwalls.com/wallpapers/8k-abstract-purple-hint-wp.jpg" alt="Painting 5" id="img16">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://images.hdqwalls.com/wallpapers/8k-abstract-purple-hint-wp.jpg`, 'Abstract 16', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+    </div>
+    <script src="cat_js.js">
+    </script>
+</body>
+</html>

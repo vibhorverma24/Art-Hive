@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banaras</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="cat_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="nav_bar">
+        <img src="/Screenshot 2024-02-08 181123.png" id="img1">
+        <h1 style="text-align: center;font-size: 3em;">
+            Banaras
+        </h1>
+        <button>
+            Cart
+        </button>
+    </div>
+    <div class="parent_">
+        <div class="cart_box" id="cartBox">
+            <h1>Shopping Cart</h1>
+            <hr>
+            <div class="default">
+                <p style="text-align: center;display:none;">Nothing to display here..</p>
+            </div>
+            <div class="items">
+                
+            </div>
+            <div class="closer">
+                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/delete-sign.png" alt="delete-sign"/>
+            </div>
+        </div>
+    </div>
+    <div class="pin_container">
+        <div class="card card_small">
+            <img src="https://th.bing.com/th/id/OIP._ZLwteyLfdazPvAHQ3N5xwAAAA?rs=1&pid=ImgDetMain" alt="Painting 1">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/OIP._ZLwteyLfdazPvAHQ3N5xwAAAA?rs=1&pid=ImgDetMain`, 'Carving 1', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 9500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://hblimg.mmtcdn.com/content/hubble/img/ayodhyattdimages/mmt/activities/m_Naya_Ghat_ttd_2_l_480_640.jpg" alt="Painting 2">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://hblimg.mmtcdn.com/content/hubble/img/ayodhyattdimages/mmt/activities/m_Naya_Ghat_ttd_2_l_480_640.jpg`, 'Carving 2', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 11500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://th.bing.com/th/id/R.bb1d43da08484595a0979e32a8e3cf16?rik=sff2egI5kR3xcg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2448%2f4000995961_827a2d38eb_z.jpg%3fzz%3d1&ehk=TorAo1R1FyK3adnL%2fXqNdroyP7w4cLocdYSl1hqyCnU%3d&risl=&pid=ImgRaw&r=0" alt="Painting 3">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/R.bb1d43da08484595a0979e32a8e3cf16?rik=sff2egI5kR3xcg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2448%2f4000995961_827a2d38eb_z.jpg%3fzz%3d1&ehk=TorAo1R1FyK3adnL%2fXqNdroyP7w4cLocdYSl1hqyCnU%3d&risl=&pid=ImgRaw&r=0`, 'Carving 3', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 12299
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://shivshankartirthyatra.com/blog/wp-content/uploads/2021/02/Kashi-Vishwanath-Temple-lead-optimised.jpg" alt="Painting 4">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://shivshankartirthyatra.com/blog/wp-content/uploads/2021/02/Kashi-Vishwanath-Temple-lead-optimised.jpg`, 'Carving 4', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 8500
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://i1.wp.com/varanasivideos.com/wp-content/uploads/2019/01/Museum-Entrance.jpg?w=1075&ssl=1" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://i1.wp.com/varanasivideos.com/wp-content/uploads/2019/01/Museum-Entrance.jpg?w=1075&ssl=1`, 'Carving 5', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 10500
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://2.bp.blogspot.com/-voVQR8H1PEc/Up_MsFlxzRI/AAAAAAAABA0/O0XxPjqW0Qs/s1600/IMG_3127.JPG" alt="Painting 6">
+            <button class="add_" onclick="addItemToCart(`https://2.bp.blogspot.com/-voVQR8H1PEc/Up_MsFlxzRI/AAAAAAAABA0/O0XxPjqW0Qs/s1600/IMG_3127.JPG`, 'Carving 6', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <button class="add_">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 14000
+            </div>
+        </div>
+
+
+        <div class="card card_large">
+            <img src="https://i2.wp.com/varanasivideos.com/wp-content/uploads/2019/01/Help-Desk.jpg?resize=1075%2C432" alt="Painting 6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://i2.wp.com/varanasivideos.com/wp-content/uploads/2019/01/Help-Desk.jpg?resize=1075%2C432`, 'Carving 7', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. `5199
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://www.thestatesman.com/wp-content/uploads/2017/08/1483698572-art-exhibition.jpg" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://www.thestatesman.com/wp-content/uploads/2017/08/1483698572-art-exhibition.jpg`, 'Carving 8', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 11000
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://i.pinimg.com/originals/71/e9/c0/71e9c06af557913f09a82b81c2aea055.jpg" alt="Painting 6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://i.pinimg.com/originals/71/e9/c0/71e9c06af557913f09a82b81c2aea055.jpg`, 'Carving 9', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 13699
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://th-thumbnailer.cdn-si-edu.com/LbtTbSX3948Clq6aBRl7bMDkUzM=/fit-in/1072x0/https://tf-cmsv2-photocontest-smithsonianmag-prod-approved.s3.amazonaws.com/0d447a31-8f6b-4ced-9874-3cb2e5615713.jpg" alt="Painting 4">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://i.pinimg.com/originals/71/e9/c0/71e9c06af557913f09a82b81c2aea055.jpg`, 'Carving 10', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 6999
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://s3.ap-south-1.amazonaws.com/floweraura-blog-img/diwali_2018/1st.jpg" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://s3.ap-south-1.amazonaws.com/floweraura-blog-img/diwali_2018/1st.jpg`, 'Carving 11', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 11499
+            </div>
+        </div>
+
+        <div class="card card_medium">
+            <img src="https://www.tripsavvy.com/thmb/k67qD4GE12CNvq2xv3YxR__3bUI=/2000x1333/filters:no_upscale():max_bytes(150000):strip_icc()/brijrama-palace-5bfd934f46e0fb00518666fb.jpg" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://www.tripsavvy.com/thmb/k67qD4GE12CNvq2xv3YxR__3bUI=/2000x1333/filters:no_upscale():max_bytes(150000):strip_icc()/brijrama-palace-5bfd934f46e0fb00518666fb.jpg`, 'Carving 12', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 14299
+            </div>
+        </div>
+        <div class="card card_large">
+            <img src="https://curlytales.com/wp-content/uploads/2019/02/IMG_00781.jpg" alt="Painting 6">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://curlytales.com/wp-content/uploads/2019/02/IMG_00781.jpg`, 'Carving 13', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 15299
+            </div>
+        </div>
+        <div class="card card_small">
+            <img src="https://th.bing.com/th/id/OIP.bcm4Ybci1aFktgXrXKHofwAAAA?rs=1&pid=ImgDetMain" alt="Painting 4">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://th.bing.com/th/id/OIP.bcm4Ybci1aFktgXrXKHofwAAAA?rs=1&pid=ImgDetMain`, 'Carving 14', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 12000
+            </div>
+        </div>
+        <div class="card card_medium">
+            <img src="https://www.thelalit.com/wp-content/uploads/2017/02/Villa-Outdoor-Goa-1-e1486931552541-768x562.jpg" alt="Painting 5">
+            <button class="like_">
+                <i class="fa-regular fa-heart" onclick="liked(this)"></i>
+            </button>
+            <button class="add_" onclick="addItemToCart(`https://www.thelalit.com/wp-content/uploads/2017/02/Villa-Outdoor-Goa-1-e1486931552541-768x562.jpg`, 'Carving 15', 'Rs. 9500'),changecontent(this)">
+                ADD
+            </button>
+            <div class="cat_price">
+                Rs. 14500
+            </div>
+        </div>
+    </div>
+    <script src="cat_js.js"></script>
+</body>
+
+</html>
